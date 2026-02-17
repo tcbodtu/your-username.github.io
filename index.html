@@ -21,14 +21,23 @@ body{
 /* HEADER */
 
 .header{
- background:#0a1f44;
- color:white;
- padding:16px 20px;
- display:flex;
- align-items:center;
- justify-content:space-between;
- flex-wrap:wrap; /* önemli */
- gap:10px;
+
+  background:#0a1f44;
+
+  color:white;
+
+  padding:16px 20px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  flex-wrap:wrap;
+
+  gap:10px;
+
 }
 
 .logo-group{
@@ -37,25 +46,31 @@ body{
 
   align-items:center;
 
-  gap:15px;
+  gap:12px;
+
+  flex-shrink:0;
 
 }
 
 .logo{
 
-  height:45px;
+  height:42px;
 
   background:white;
 
-  padding:5px 10px;
+  padding:4px 8px;
 
   border-radius:6px;
+
+  max-width:120px;
 
 }
 
 .logo100{
 
-  height:45px;
+  height:42px;
+
+  max-width:120px;
 
 }
 
@@ -144,59 +159,14 @@ a{
   font-weight:500;
 
 }
-</style>
-</head>
-<body>
-<!-- HEADER -->
-<div class="header">
-<div class="logo-group">
-<img src="slb-logo.png" class="logo" alt="SLB Logo">
-<img src="slb-100.png" class="logo100" alt="SLB 100 Yıl">
-</div>
-<h2>👥 SLB Ekip İletişim Kartı</h2>
-</div>
-<div class="container">
-<div class="card">
-<img src="andrei.jpg" class="photo">
-<div class="info">
-<div class="name">Andrei David</div>
 
-    📧 <a href="mailto:GDavid@slb.com">GDavid@slb.com</a>
-</div>
-</div>
-<div class="card">
-<img src="ahmet.jpg" class="photo">
-<div class="info">
-<div class="name">Ahmet Tolga Usta</div>
+/* MOBILE FIX */
 
-    📧 <a href="mailto:austa@slb.com">austa@slb.com</a>
-</div>
-</div>
-<div class="card">
-<img src="turgut.jpg" class="photo">
-<div class="info">
-<div class="name">Turgut Can Bilmez</div>
+@media (max-width:600px){
 
-    📧 <a href="mailto:tbilmez@slb.com">tbilmez@slb.com</a>
-</div>
-</div>
-<div class="card">
-<img src="seyma.jpg" class="photo">
-<div class="info">
-<div class="name">Şeyma Nur Gündüz</div>
+  .header{
 
-    📧 <a href="mailto:sgunduz@slb.com">sgunduz@slb.com</a>
-</div>
-</div>
-<div class="card">
-<img src="yasemin.jpg" class="photo">
-<div class="info">
-<div class="name">Yasemin Hamitoğlu</div>
+    flex-direction:column;
 
-    📧 <a href="mailto:ykilic@slb.com">ykilic@slb.com</a>
-</div>
-</div>
-</div>
-</body>
-</html>
+    align
  
