@@ -2,164 +2,167 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<title>SLB Ekip İletişim Kartı</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SLB Ekip İletişim Kartı</title>
 <style>
+
 body{
- font-family: Arial, sans-serif;
- background:#ffffff;
- margin:0;
- padding:0;
+
+  font-family: Arial, sans-serif;
+
+  background:#f5f7fa;
+
+  margin:0;
+
+  padding:0;
+
 }
-/* ===== HEADER ===== */
-.top-bar{
- display:flex;
- align-items:center;
- justify-content:space-between;
- padding:14px 20px;
- background:#0a1f44;
- color:white;
- flex-wrap:wrap;
- box-shadow:0 2px 10px rgba(0,0,0,0.15);
+
+/* HEADER */
+
+.header{
+
+  background:#0a1f44;
+
+  color:white;
+
+  padding:20px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  flex-wrap:wrap;
+
 }
+
 .logo-group{
- display:flex;
- align-items:center;
- gap:12px;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:15px;
+
 }
+
 .logo{
- height:44px;
+
+  height:45px;
+
+  background:white;
+
+  padding:5px 10px;
+
+  border-radius:6px;
+
 }
-.title{
- font-size:20px;
- font-weight:600;
+
+.logo100{
+
+  height:45px;
+
 }
-/* ===== CONTAINER ===== */
+
 .container{
- max-width:700px;
- margin:auto;
- padding:20px;
+
+  max-width:700px;
+
+  margin:auto;
+
+  padding:20px;
+
 }
-/* ===== CARD ===== */
+
+/* KART */
+
 .card{
- background:#f4f8fb;
- padding:16px;
- margin-bottom:18px;
- border-radius:14px;
- border-left:6px solid #0072ce;
- display:flex;
- gap:15px;
- align-items:center;
- box-shadow:0 6px 18px rgba(0,0,0,0.08);
- transition:0.2s;
+
+  background:white;
+
+  padding:18px;
+
+  margin-bottom:16px;
+
+  border-radius:14px;
+
+  border-left:6px solid #0072ce;
+
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+
+  transition:0.2s;
+
 }
+
 .card:hover{
- transform:translateY(-3px);
- box-shadow:0 10px 22px rgba(0,0,0,0.12);
+
+  transform:translateY(-3px);
+
+  box-shadow:0 10px 24px rgba(0,0,0,0.12);
+
 }
-/* ===== FOTO ===== */
-.avatar{
- width:70px;
- height:70px;
- border-radius:50%;
- object-fit:cover;
- border:2px solid #0072ce;
-}
-/* ===== INFO ===== */
-.info{
- flex:1;
-}
+
 .name{
- font-size:19px;
- font-weight:bold;
- color:#0072ce;
- margin-bottom:6px;
+
+  font-size:19px;
+
+  font-weight:bold;
+
+  color:#0072ce;
+
+  margin-bottom:6px;
+
 }
+
 a{
- color:#0072ce;
- text-decoration:none;
- font-weight:500;
-}
-/* ===== BUTTON ===== */
-.add-btn{
- margin-top:8px;
- padding:6px 12px;
- border:none;
- border-radius:8px;
- background:#0072ce;
- color:white;
- cursor:pointer;
- font-size:13px;
-}
-.add-btn:hover{
- background:#005fa8;
-}
-/* ===== MOBILE ===== */
-@media(max-width:520px){
- .card{
-   flex-direction:column;
-   text-align:center;
- }
- .top-bar{
-   flex-direction:column;
-   gap:10px;
-   text-align:center;
- }
+
+  color:#0072ce;
+
+  text-decoration:none;
+
+  font-weight:500;
+
 }
 </style>
 </head>
 <body>
-<!-- ===== HEADER ===== -->
-<header class="top-bar">
+<!-- HEADER -->
+<div class="header">
 <div class="logo-group">
-<!-- SLB ANA LOGO -->
-<img src="slb-logo.png" alt="SLB Logo" class="logo">
-<!-- 100. YIL LOGO -->
-<img src="slb-100yil.png" alt="SLB 100 Yıl" class="logo">
+<img src="slb-logo.png" class="logo" alt="SLB Logo">
+<img src="slb-100.png" class="logo100" alt="SLB 100 Yıl">
 </div>
-<div class="title">👥 SLB Ekip İletişim Kartı</div>
-</header>
+<h2>👥 SLB Ekip İletişim Kartı</h2>
+</div>
 <div class="container">
 <div class="card">
-<img src="andrei.jpg" class="avatar">
-<div class="info">
 <div class="name">Andrei David</div>
-     📧 <a href="mailto:GDavid@slb.com">GDavid@slb.com</a><br>
-<button class="add-btn">➕ Rehbere ekle</button>
-</div>
+
+  📧 <a href="mailto:GDavid@slb.com">GDavid@slb.com</a>
 </div>
 <div class="card">
-<img src="ahmet.jpg" class="avatar">
-<div class="info">
 <div class="name">Ahmet Tolga Usta</div>
-     📧 <a href="mailto:austa@slb.com">austa@slb.com</a><br>
-<button class="add-btn">➕ Rehbere ekle</button>
-</div>
+
+  📧 <a href="mailto:austa@slb.com">austa@slb.com</a>
 </div>
 <div class="card">
-<img src="turgut.jpg" class="avatar">
-<div class="info">
 <div class="name">Turgut Can Bilmez</div>
-     📧 <a href="mailto:tbilmez@slb.com">tbilmez@slb.com</a><br>
-<button class="add-btn">➕ Rehbere ekle</button>
-</div>
+
+  📧 <a href="mailto:tbilmez@slb.com">tbilmez@slb.com</a>
 </div>
 <div class="card">
-<img src="seyma.jpg" class="avatar">
-<div class="info">
 <div class="name">Şeyma Nur Gündüz</div>
-     📧 <a href="mailto:sgunduz@slb.com">sgunduz@slb.com</a><br>
-<button class="add-btn">➕ Rehbere ekle</button>
-</div>
+
+  📧 <a href="mailto:sgunduz@slb.com">sgunduz@slb.com</a>
 </div>
 <div class="card">
-<img src="yasemin.jpg" class="avatar">
-<div class="info">
 <div class="name">Yasemin Hamitoğlu</div>
-     📧 <a href="mailto:ykilic@slb.com">ykilic@slb.com</a><br>
-<button class="add-btn">➕ Rehbere ekle</button>
-</div>
+
+  📧 <a href="mailto:ykilic@slb.com">ykilic@slb.com</a>
 </div>
 </div>
 </body>
 </html>
+ 
