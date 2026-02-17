@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>SLB Ekip İletişim Kartı</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body{
+
+  font-family:Arial;
+
+  background:#ffffff;
+
+  padding:20px;
+
+  max-width:700px;
+
+  margin:auto
+
+}
+
+.header{text-align:center;margin-bottom:30px}
+
+.card{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:15px;
+
+  background:#f4f8fb;
+
+  padding:16px;
+
+  margin-bottom:18px;
+
+  border-radius:14px;
+
+  border-left:6px solid #0072ce;
+
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+
+  transition:all .18s ease;
+
+}
+
+.card:hover{
+
+  transform:translateY(-3px);
+
+  box-shadow:0 10px 26px rgba(0,0,0,0.12);
+
+}
+
+.photo{
+
+  width:64px;
+
+  height:64px;
+
+  border-radius:50%;
+
+  object-fit:cover;
+
+  border:2px solid #0072ce;
+
+  background:#e0e6ed;
+
+}
+
+.info{flex:1}
+
+.name{
+
+  font-size:20px;
+
+  font-weight:bold;
+
+  color:#0072ce;
+
+  margin-bottom:4px
+
+}
+
+a.mail{
+
+  color:#0072ce;
+
+  text-decoration:none;
+
+  font-weight:500;
+
+  display:block;
+
+  margin-bottom:6px;
+
+}
+
+.save-btn{
+
+  display:inline-block;
+
+  background:#0072ce;
+
+  color:#fff;
+
+  padding:6px 12px;
+
+  border-radius:8px;
+
+  font-size:13px;
+
+  text-decoration:none;
+
+  font-weight:bold;
+
+}
+
+.save-btn:hover{opacity:.9}
+
+@media (max-width:480px){
+
+  .photo{width:56px;height:56px}
+
+  .name{font-size:18px}
+
+}
+</style>
+</head>
+<body>
+<div class="header">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/SLB_Logo_2023.png" width="150">
+<h2>👥 SLB Ekip İletişim Kartı</h2>
+</div>
+<!-- Andrei -->
+<div class="card">
+<img class="photo" src="andrei.jpg" alt="Andrei David">
+<div class="info">
+<div class="name">Andrei David</div>
+<a class="mail" href="mailto:GDavid@slb.com">📧 GDavid@slb.com</a>
+<a class="save-btn" href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:Andrei%20David%0AEMAIL:GDavid@slb.com%0AEND:VCARD" download>📥 Rehbere ekle</a>
+</div>
+</div>
+<!-- Ahmet -->
+<div class="card">
+<img class="photo" src="ahmet.jpg" alt="Ahmet Tolga Usta">
+<div class="info">
+<div class="name">Ahmet Tolga Usta</div>
+<a class="mail" href="mailto:austa@slb.com">📧 austa@slb.com</a>
+<a class="save-btn" href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:Ahmet%20Tolga%20Usta%0AEMAIL:austa@slb.com%0AEND:VCARD" download>📥 Rehbere ekle</a>
+</div>
+</div>
+<!-- Turgut -->
+<div class="card">
+<img class="photo" src="turgut.jpg" alt="Turgut Can Bilmez">
+<div class="info">
+<div class="name">Turgut Can Bilmez</div>
+<a class="mail" href="mailto:tbilmez@slb.com">📧 tbilmez@slb.com</a>
+<a class="save-btn" href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:Turgut%20Can%20Bilmez%0AEMAIL:tbilmez@slb.com%0AEND:VCARD" download>📥 Rehbere ekle</a>
+</div>
+</div>
+<!-- Şeyma -->
+<div class="card">
+<img class="photo" src="seyma.jpg" alt="Şeyma Nur Gündüz">
+<div class="info">
+<div class="name">Şeyma Nur Gündüz</div>
+<a class="mail" href="mailto:sgunduz@slb.com">📧 sgunduz@slb.com</a>
+<a class="save-btn" href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:Şeyma%20Nur%20Gündüz%0AEMAIL:sgunduz@slb.com%0AEND:VCARD" download>📥 Rehbere ekle</a>
+</div>
+</div>
+<!-- Yasemin -->
+<div class="card">
+<img class="photo" src="yasemin.jpg" alt="Yasemin Hamitoğlu">
+<div class="info">
+<div class="name">Yasemin Hamitoğlu</div>
+<a class="mail" href="mailto:ykilic@slb.com">📧 ykilic@slb.com</a>
+<a class="save-btn" href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:Yasemin%20Hamitoğlu%0AEMAIL:ykilic@slb.com%0AEND:VCARD" download>📥 Rehbere ekle</a>
+</div>
+</div>
+</body>
+</html>
+ 
